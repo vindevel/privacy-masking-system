@@ -48,10 +48,11 @@
 
 ## 시스템 아키텍처
 <img width="2803" height="1110" alt="image" src="https://github.com/user-attachments/assets/f9ac2204-30db-41cc-9bca-7e422a2e11c2" />
-1. 사용자가 이미지를 업로드하면 Spring Boot 서버가 수신<br>
-2. Spring Boot가 Flask 서버로 이미지 분석 요청 (API)<br>
-3. Flask 서버에서 **YOLOv5(객체 탐지)** 및 **OCR(텍스트 추출)** 수행<br>
-4. 탐지된 민감 정보 좌표를 반환하여 마스킹 처리 후 결과 전송<br>
+
+1. 사용자가 이미지를 업로드하면 Spring Boot 서버가 수신
+2. Spring Boot가 Flask 서버로 이미지 분석 요청 (API)
+3. Flask 서버에서 **YOLOv5(객체 탐지)** 및 **OCR(텍스트 추출)** 수행
+4. 탐지된 민감 정보 좌표를 반환하여 마스킹 처리 후 결과 전송
 
 <br>
 
@@ -59,7 +60,7 @@
 * **민감 정보 자동 탐지:** 주민등록번호, 주소, 전화번호 등 개인정보 식별
 * **보안 지역 감지:** 군사 시설, 국가 보안 시설 등 촬영 금지 구역 탐지
 * **선택적 마스킹:** AI가 추천한 블러 영역을 사용자가 확인하고 최종 편집 가능
-* **하이브리드 OCR:** PaddleOCR의 인식률 한계를 보완하기 위해 Tesseract OCR 병행 사용
+* **하이브리드 OCR:** PaddleOCR의 인식률 한계를 보완하기 위해 TesseractOCR 병행 사용
 
 <br>
 
