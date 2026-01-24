@@ -20,6 +20,9 @@
 **11조(총 3명) 중 [프론트엔드 및 AI 모델 튜닝] 담당 (기여도: 40%)**
 
 ### 1. AI 및 데이터 엔지니어링
+
+> 관련 코드: 'ai_core/image_processor.ipynb' 파일 내 OCR 및 XGBoost 관련 로직
+
 * **가상 데이터 생성 및 라벨링:**
   * 보안 문제로 확보가 어려운 주민등록증 실물 데이터 대신 실제와 유사한 **가상 데이터를 생성**하여 학습 데이터셋을 구축하고 라벨링 수행
   * 회전, 크기 조절, 밝기 변형 등을 적용한 데이터 증강 작업을 통해 YOLOv5 학습 데이터 부족 문제 해결
@@ -30,6 +33,9 @@
   * 기존 Grid Search 대비 효율적으로 'max_depth', 'learning_rate' 등 주요 파라미터를 자동 최적화하여 튜닝 시간 단축 및 성능 향상
 
 ### 2. 프론트엔드 개발
+
+> 관련 코드: 'SecurePic_System/src/main/resources/' 내 'static', 'templates' 폴더
+
 * **UI/UX 디자인 및 구현:**
   * HTML/CSS/JavaScript를 활용하여 직관적인 이미지 업로드 초기 화면 및 결과 확인 페이지 전체 디자인 및 구현
 * **동적 마스킹 기능 (Interactive Features):**
@@ -49,12 +55,14 @@
 <br>
 
 ## 시스템 아키텍처
-<img width="2803" height="1110" alt="image" src="https://github.com/user-attachments/assets/f9ac2204-30db-41cc-9bca-7e422a2e11c2" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/f9ac2204-30db-41cc-9bca-7e422a2e11c2" />
 
 1. 사용자가 이미지를 업로드하면 Spring Boot 서버가 수신
 2. Spring Boot가 Flask 서버로 이미지 분석 요청 (API)
 3. Flask 서버에서 **YOLOv5(객체 탐지)** 및 **OCR(텍스트 추출)** 수행
 4. 탐지된 민감 정보 좌표를 반환하여 마스킹 처리 후 결과 전송
+
+> Note: 본 레포지토리에는 전체 시스템 구동을 보여주기 위해 팀원이 개발한 Spring Boot 백엔드 서버 코드가 포함되어 있습니다. (Backend Reference)
 
 <br>
 

@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePic</title>
+    <meta name="description" content="Figma html">
+    <meta name="author" content="html">
+    <link href="https://fonts.googleapis.com/css?family=Pretendard&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+
+    <!-- 상대 주소로 변경 -->
+    <link rel="stylesheet" href="/static/pages/main/css/styles.css">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* 가로 스크롤바가 생기지 않도록 설정 */
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="total_box">
+      <div class="totalgroupbox">
+        <div class="fixedbartotal">
+          <div class="fixedbarup">
+
+          </div>
+          <div class="e18_3">
+            <span class="e9_4">SecurePic</span>
+          </div>
+        </div>
+        <div class="e10_25"></div>
+        <span class="e10_52">프로젝트 제안 배경</span>
+        <span class="e10_51">이미지의 사용 빈도가 급증하면서 이미지 파일 내에 포함된<br>
+          개인정보와 기밀 정보의 노출 위험성 또한 증가하고 있습니다.<br>
+          이러한 상황에서 해당 프로젝트 목표는 이미지 분석을 통해<br>
+          민감한 정보 및 기밀 정보를 효과적으로 탐지하고, 필요한<br>
+          보안 조치를 제안하는 시스템을 설계 및 구현하는 데 있습니다.
+        </span>
+        <div class="e55_5">
+          <img src="/static/pages/main/images/image_1.png" alt="Sample Image 3">
+        </div>
+
+        <div class="e97_188"></div>
+        <div class="e110_478">
+          <!-- 상대 주소로 변경 -->
+          <img src="/static/pages/main/images/image_5.png" alt="Sample Image 1">
+        </div>
+        <span class="e10_58">이미지 내 개인정보 탐지 후 삭제</span>
+        <span class="e10_59">이미지를 업로드하면 개인정보를 탐지합니다. <br>
+          블러 처리 예상지를 이유와 함께 제공하여 필요한 보안 조치를 <br>
+          안내합니다. 사용자가 블러 처리 예상지 내에서 블러 처리할 곳을 <br>
+          선택하면 선택된 곳만 블러 처리한 사진을 반환합니다.
+        </span>
+        <span class="e19_6">이미지 내 보안 지역에 대한 정보 탐지 후 삭제</span>
+        <span class="e19_7">이미지를 업로드하면 보안 지역에 대한 정보를 탐지합니다.<br>
+          군부대, 공공 기관 등 출입 금지 장소의 정보가<br>
+          탐지되면 블러 처리 선택 없이 경고 문구를 생성합니다.<br>
+          이 기능은 이미지가 위치 정보를 포함할 경우에만 제공됩니다.
+        </span>
+        <div class="e110_498">
+          <!-- 상대 주소로 변경 -->
+          <img src="/static/pages/main/images/image_9.png" alt="Sample Image 2">
+        </div>
+        <div class="e164_210">
+          <span class="e10_39">이미지 내 특정 정보를 탐지하여 삭제하는 시스템</span>
+          <span class="e10_33">PNG, JPG, JPEG 형식의 이미지를 업로드해주세요.</span>
+
+          <div class="e72_3384">
+            <div class="ei72_3384_72_3367" id="uploadButton"></div>
+            <span class="ei72_3384_72_3368">이미지 업로드</span>
+          </div>
+          <input type="file" id="fileInput" style="display: none;" accept="image/png, image/jpg, image/jpeg">
+          
+          <div class="e10_36">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+          <span class="e10_42">이미지 분석을 통해 개인정보 및 기밀 정보를 탐지 후 삭제하고, 필요한 보안 조치를 제안합니다. <br>
+            하단에 프로젝트 제안 배경과 더 자세한 기능이 설명되어 있습니다.
+          </span>
+
+        </div>
+      </div>
+    </div>
+    <!-- 상대 주소로 변경 -->
+    <script src="/static/pages/main/js/app.js"></script>
+  </body>
+</html>

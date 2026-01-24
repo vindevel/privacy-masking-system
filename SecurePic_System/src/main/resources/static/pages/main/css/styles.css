@@ -1,0 +1,406 @@
+.total_bax { 
+	background-color:rgba(255, 255, 255, 1);
+	width:100vw; /* 1440px을 100vw로 변환 */
+	height:127.43vw; /* 1835px을 비율로 변환 */
+	position:absolute;
+}
+.totalgroupbox { 
+	width:100vw;
+	height:125vw; /* 1798.99px을 비율로 변환 */
+	position:absolute;
+	left:0;
+	top:0;
+}
+.fixedbartotal { 
+	width:100vw;
+	height:10.42vw; /* 150px을 비율로 변환 */
+	position:absolute;
+	left:0;
+	top:0;
+}
+.fixedbarup { 
+	background-color:rgba(255, 255, 255, 1);
+	width:100vw;
+	height:6.46vw; /* 93.058px을 비율로 변환 */
+	position:absolute;
+	left:0;
+	top:0;
+}
+.signformtotal { 
+	width:7.64vw; /* 110px을 비율로 변환 */
+	height:2.43vw; /* 35px을 비율로 변환 */
+	position:absolute;
+	left:79.86vw; /* 1150px을 비율로 변환 */
+	top:2.02vw; /* 29.03px을 비율로 변환 */
+}
+.signformbox { 
+	box-shadow:0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); /* 4px을 비율로 변환 */
+	background-color:rgba(143, 171, 183, 1);
+	width:7.64vw;
+	height:2.43vw;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:1.39vw; /* 20px을 비율로 변환 */
+}
+.signformtext { 
+	color:rgba(251, 251, 251, 1);
+	width:3.89vw; /* 56px을 비율로 변환 */
+	height:1.32vw; /* 19px을 비율로 변환 */
+	position:absolute;
+	left:1.88vw; /* 27px을 비율로 변환 */
+	top:0.63vw; /* 9px을 비율로 변환 */
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.11vw; /* 16px을 비율로 변환 */
+	letter-spacing:0;
+}
+.e72_3322 { 
+	width:7.64vw;
+	height:2.43vw;
+	position:absolute;
+	left:88.47vw; /* 1274px을 비율로 변환 */
+	top:2.02vw;
+}
+.ei72_3322_10_22 { 
+	box-shadow:0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25);
+	background-color:rgba(143, 171, 183, 1);
+	width:7.64vw;
+	height:2.43vw;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:1.39vw;
+}
+.ei72_3322_10_23 { 
+	color:rgba(251, 251, 251, 1);
+	width:2.92vw; /* 42px을 비율로 변환 */
+	height:1.32vw;
+	position:absolute;
+	left:2.36vw; /* 34px을 비율로 변환 */
+	top:0.63vw;
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.11vw;
+	letter-spacing:0;
+}
+.e18_3 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:100vw;
+	height:5.32vw; /* 76.65px을 비율로 변환 */
+	position:absolute;
+	left:0;
+	top:5.10vw; /* 73.35px을 비율로 변환 */
+}
+.e9_4 { 
+	color:rgba(70, 101, 111, 1);
+	width:19.65vw; /* 283px을 비율로 변환 */
+	height:7.43vw; /* 107px을 비율로 변환 */
+	position:absolute;
+	left:40.14vw; /* 578.5px을 비율로 변환 */
+	top:-1.05vw; /* -15.18px을 비율로 변환 */
+	font-family:Calistoga;
+	font-weight: 550;
+	text-align:center;
+	font-size:4.44vw; /* 64px을 비율로 변환 */
+	letter-spacing:0;
+}
+.e10_25 { 
+	background-color:rgba(240.67, 244.31, 246.49, 1);
+	width:91.67vw; /* 1320px을 비율로 변환 */
+	height:25.83vw; /* 372px을 비율로 변환 */
+	position:absolute;
+	left:4.17vw; /* 60px을 비율로 변환 */
+	top:11.6vw; /* 167px을 비율로 변환 */
+}
+.e10_52{ 
+	color:rgba(89, 89, 89, 1);
+	width:40.28vw; /* 580px을 비율로 변환 */
+	height:22.22vw; /* 320px을 비율로 변환 */
+	position:absolute;
+	left:5.77vw; /* 97.5px을 비율로 변환 */
+	top:43vw; /* 576px을 비율로 변환 */
+	font-family: pretendard;
+	text-align:left;
+	font-size:1.944vw; /* 기존 px 값을 비율로 변환 (필요시 조정) */
+	font-weight: 800;
+	letter-spacing:0;
+}
+.e10_51 { 
+	color:rgba(89, 89, 89, 1);
+	width:40.28vw; /* 580px을 비율로 변환 */
+	height:22.22vw; /* 320px을 비율로 변환 */
+	position:absolute;
+	left:5.77vw; /* 97.5px을 비율로 변환 */
+	top:47vw; /* 576px을 비율로 변환 */
+	font-family: pretendard;
+	text-align:left;
+	font-size:1.667vw; /* 기존 px 값을 비율로 변환 (필요시 조정) */
+	line-height: 1.8;
+	letter-spacing:0;
+}
+.e55_5 { 
+	background-color:rgba(217, 217, 217, 1);
+	width:44.44vw; /* 640px을 비율로 변환 */
+	height:25vw; /* 360px을 비율로 변환 */
+	position:absolute;
+	left:48.75vw; /* 702.5px을 비율로 변환 */
+	top:41.61vw; /* 556px을 비율로 변환 */
+}
+
+.e55_5 img {
+	width: 100%; /* 부모 요소의 너비를 채우도록 설정 */
+	height: 100%; /* 부모 요소의 높이를 채우도록 설정 */
+	object-fit: contain; /* 비율 유지하며 영역에 맞춤 */
+}
+
+.e97_187 { 
+	transform: rotate(0.000005008956130975318deg);
+	width:62.5vw; /* 900px을 비율로 변환 */
+	height:0;
+	position:absolute;
+	left:18.75vw; /* 270px을 비율로 변환 */
+	top:70.86vw; /* 933px을 비율로 변환 */
+	border:0.06vw solid rgba(70, 101, 111, 1); /* 1px을 비율로 변환 */
+}
+
+.e97_186 { 
+	color:rgba(70, 101, 111, 1);
+	width:89.58vw; /* 1290px을 비율로 변환 */
+	height:5.21vw; /* 75px을 비율로 변환 */
+	position:absolute;
+	left:5.21vw; /* 75px을 비율로 변환 */
+	top:71.87vw; /* 950px을 비율로 변환 */
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.39vw; /* 20px을 비율로 변환 */
+	letter-spacing:0;
+	line-height:1.5; /* line-height를 px에 맞춰 설정 */
+}
+.e97_188 { 
+	transform: rotate(0.09565229258099768deg);
+	width:82.64vw; /* 1190px을 비율로 변환 */
+	height:0;
+	position:absolute;
+	left:8.68vw; /* 125px을 비율로 변환 */
+	top:73vw; /* 1042px을 비율로 변환 */
+	border:0.06vw solid rgba(70, 101, 111, 1);
+}
+
+.e110_478 { 
+	width:44.44vw; /* 640px을 비율로 변환 */
+	height:21.74vw; /* 313.03px을 비율로 변환 */
+	position:absolute;
+	left:4.38vw; /* 77.5px을 비율로 변환 */
+	top:80.35vw; /* 1084.97px을 비율로 변환 */
+	object-fit: contain;
+}
+
+.e110_478 img {
+	width: 100%; /* 부모 요소의 너비를 채우도록 설정 */
+	height: 100%; /* 부모 요소의 높이를 채우도록 설정 */
+	object-fit: contain; /* 비율 유지하며 영역에 맞춤 */
+}
+
+.e10_58 { 
+	color:rgba(89, 89, 89, 1);
+	width:43.06vw; /* 620px을 비율로 변환 */
+	height:25.07vw; /* 361px을 비율로 변환 */
+	position:absolute;
+	left:51.6vw; /* 742.5px을 비율로 변환 */
+	top:82.61vw; /* 1060.99px을 비율로 변환 */
+	text-align:left;
+	font-size:1.944vw; /* 기존 px 값을 비율로 변환 (필요시 조정) */
+	font-weight: 800;
+	font-family: pretendard;
+	letter-spacing:0;
+}
+.e10_59 { 
+	color:rgba(89, 89, 89, 1);
+	width:43.06vw; /* 620px을 비율로 변환 */
+	height:25.07vw; /* 361px을 비율로 변환 */
+	position:absolute;
+	left:51.6vw; /* 742.5px을 비율로 변환 */
+	top:86.61vw; /* 1060.99px을 비율로 변환 */
+	text-align:left;
+	font-family: pretendard;
+	font-size:1.667vw; /* 기존 px 값을 비율로 변환 (필요시 조정) */
+	line-height: 1.8;
+	letter-spacing:0;
+}
+.e19_6 { 
+	color:rgba(89, 89, 89, 1);
+	width:43.06vw; /* 620px을 비율로 변환 */
+	height:17.36vw; /* 250px을 비율로 변환 */
+	position:absolute;
+	left:6.64vw; /* 52.375px을 비율로 변환 */
+	top:106.19vw; /* 1493.99px을 비율로 변환 */
+	text-align:left;
+	font-size:1.944vw; /* 기존 px 값을 비율로 변환 (필요시 조정) */
+	font-weight: 800;
+	font-family: pretendard;
+	letter-spacing:0;
+}
+.e19_7 { 
+	color:rgba(89, 89, 89, 1);
+	width:43.06vw; /* 620px을 비율로 변환 */
+	height:17.36vw; /* 250px을 비율로 변환 */
+	position:absolute;
+	left:6.64vw; /* 52.375px을 비율로 변환 */
+	top:110.19vw; /* 1493.99px을 비율로 변환 */
+	text-align:left;
+	font-family: pretendard;
+	font-size:1.667vw; /* 기존 px 값을 비율로 변환 (필요시 조정) */
+	line-height: 1.8;
+	letter-spacing:0;
+}
+
+.e110_498 { 
+	width:47.92vw; /* 690.25px을 비율로 변환 */
+	height:25vw; /* 360px을 비율로 변환 */
+	position:absolute;
+	left:48.46vw; /* 697.38px을 비율로 변환 */
+	top:102.38vw; /* 1438.99px을 비율로 변환 */
+	overflow: hidden;;
+}
+
+.e110_498 img {
+	width: 100%; /* 부모 요소의 너비를 채우도록 설정 */
+	height: 100%; /* 부모 요소의 높이를 채우도록 설정 */
+	object-fit: contain; /* 비율 유지하며 영역에 맞춤 */
+}
+
+.e164_210 { 
+	width:77.57vw; /* 1117px을 비율로 변환 */
+	height:21.18vw; /* 305px을 비율로 변환 */
+	position:absolute;
+	left:10vw; /* 144px을 비율로 변환 */
+	top:13.96vw; /* 201px을 비율로 변환 */
+}
+
+.e10_39 { 
+	color:rgba(89, 89, 89, 1);
+	width:68.4vw; /* 985px을 비율로 변환 */
+	height:1.88vw; /* 27px을 비율로 변환 */
+	position:absolute;
+	left:4.65vw; /* 67px을 비율로 변환 */
+	top:0;
+	font-family:Pretendard;
+	text-align:center;
+	font-weight: 800;
+	font-size:1.94vw; /* 28px을 비율로 변환 */
+	letter-spacing:0;
+}
+
+.e10_33 { 
+	color:rgba(89, 89, 89, 1);
+	width:33.89vw; /* 488px을 비율로 변환 */
+	height:2.36vw; /* 34px을 비율로 변환 */
+	position:absolute;
+	left:21.88vw; /* 315px을 비율로 변환 */
+	top:13.2vw; /* 184px을 비율로 변환 */
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.11vw; /* 16px을 비율로 변환 */
+	letter-spacing:0;
+}
+
+.e72_3384 { 
+	width:18.06vw; /* 260px을 비율로 변환 */
+	height:3.06vw; /* 44px을 비율로 변환 */
+	position:absolute;
+	left:29.72vw; /* 428px을 비율로 변환 */
+	top:8.68vw; /* 125px을 비율로 변환 */
+}
+
+.ei72_3384_72_3367 { 
+	box-shadow:0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); /* 4px을 비율로 변환 */
+	background-color:rgba(143, 171, 183, 1);
+	width:18.06vw;
+	height:3.06vw;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:1.39vw; /* 20px을 비율로 변환 */
+}
+
+.ei72_3384_72_3369 { 
+	box-shadow:0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); /* 4px을 비율로 변환 */
+	background-color:rgba(70, 101, 111, 1);
+	width:18.06vw;
+	height:3.06vw;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:1.39vw; /* 20px을 비율로 변환 */
+}
+
+.ei72_3384_72_33610 { 
+	box-shadow:0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); /* 4px을 비율로 변환 */
+	background-color:rgba(217, 217, 217, 1);
+	width:18.06vw;
+	height:3.06vw;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:1.39vw; /* 20px을 비율로 변환 */
+}
+
+.ei72_3384_72_3368 { 
+	color:rgba(251, 251, 251, 1);
+	width:6.81vw; /* 98px을 비율로 변환 */
+	height:1.46vw; /* 21px을 비율로 변환 */
+	position:absolute;
+	left:5.65vw; /* 81.33px을 비율로 변환 */
+	top:0.83vw; /* 12px을 비율로 변환 */
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.25vw; /* 18px을 비율로 변환 */
+	letter-spacing:0;
+}
+
+.e10_36 { 
+	background-color:rgba(217, 217, 217, 1);
+	width:36.11vw; /* 520px을 비율로 변환 */
+	height:1.39vw; /* 20px을 비율로 변환 */
+	position:absolute;
+	left:20.69vw; /* 298px을 비율로 변환 */
+	top:15.63vw; /* 225px을 비율로 변환 */
+	border-radius:3.47vw; /* 50px을 비율로 변환 */
+	overflow: hidden;
+}
+
+/* 진행률 표시 바 스타일 */
+.progress-bar {
+	background-color: rgba(70, 101, 111, 1); /* 진행률 바의 색상 */
+	width: 0%; /* 초기 너비 (0% 진행) */
+	height: 100%; /* 로딩바 높이에 맞춤 */
+	transition: width 0.3s ease-in-out; /* 부드러운 너비 변화 효과 */
+}
+
+.e10_42 { 
+	color:rgba(89, 89, 89, 1);
+	width:77.57vw; /* 1117px을 비율로 변환 */
+	height:4.17vw; /* 60px을 비율로 변환 */
+	position:absolute;
+	left:0;
+	top:3.47vw; /* 50px을 비율로 변환 */
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.39vw; /* 20px을 비율로 변환 */
+	letter-spacing:0;
+	line-height:2.08vw; /* 적절한 line-height 설정 */
+}
+
+.e72_4023 { 
+	color:rgba(89, 89, 89, 1);
+	width:72.92vw; /* 1050px을 비율로 변환 */
+	height:2.36vw; /* 34px을 비율로 변환 */
+	position:absolute;
+	left:2.36vw; /* 34px을 비율로 변환 */
+	top:18.82vw; /* 271px을 비율로 변환 */
+	font-family:Pretendard;
+	text-align:center;
+	font-size:1.11vw; /* 16px을 비율로 변환 */
+	letter-spacing:0;
+}

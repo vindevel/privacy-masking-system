@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SecurePic</title>
+    <meta name="description" content="feedback">
+    <meta name="author" content="html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pretendard&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <!-- CSS 파일 경로 수정 -->
+    <link rel="stylesheet" href="/static/pages/feedback/css/styles.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="e19_10">
+                <!-- 이미지 컨테이너 -->
+                <div class="image_container" id="imageContainer">
+                    <img id="processedImage" src="" alt="Processed Image" style="width: 100%; height: auto;">
+                </div>
+                                             
+                <!-- 피드백 내용 -->
+                <span class="feedback1" id="feedback1">피드백 내용 여기에</span>
+                <span class="feedback2" id="feedback2">피드백 내용 여기에</span>
+                <span class="feedback3" id="feedback3">피드백 내용 여기에</span>
+                
+                <!-- 토글 버튼 -->
+                <div class="toggle1_back toggle" id="toggle1" data-id="1">
+                    <div class="toggle1_circle"></div>
+                </div>
+                <div class="toggle2_back toggle" id="toggle2" data-id="2">
+                    <div class="toggle2_circle"></div>
+                </div>
+                <div class="toggle3_back toggle" id="toggle3" data-id="3">
+                    <div class="toggle3_circle"></div>
+                </div>
+                
+
+                <!-- 완료 버튼 -->
+                <div class="complete_box1">
+                    <div class="complete_box2" style="cursor: pointer;">
+                        <span class="complete_txt">완료</span>
+                    </div>
+                </div>
+
+                <div class="logo_box">
+                    <span class="logo_txt">SecurePic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript 파일 경로 수정 -->
+    <script src="/static/pages/feedback/js/app.js"></script>
+</body>
+</html>
