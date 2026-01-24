@@ -1,25 +1,45 @@
-# privacy-masking-system
-이미지 내 민감 정보(개인정보) 자동 탐지 및 마스킹 시스템
+# SecurePic : 이미지 내 특정 정보를 탐지하여 삭제하는 시스템
 
-# SecurePic : 이미지 내 민감 정보 자동 탐지 및 마스킹 시스템
 > **2024 예비캡스톤 프로젝트 (11조)**
 > **이미지 내 개인정보(주민등록증, 주소 등)와 기밀 정보를 AI가 자동으로 탐지하여 블러 처리하는 보안 솔루션**
 
+## 시연 영상 링크
+* https://youtu.be/NNCPHXUK3mg
+  
 ## 프로젝트 개요
-소셜 미디어에 이미지를 업로드하기 전, 의도치 않게 포함된 **개인정보 및 기밀 정보를 자동으로 탐지하고 삭제(마스킹)**하여 정보 유출을 방지하는 시스템입니다.
-사용자가 이미지를 업로드하면 AI가 텍스트와 객체를 분석하여 민감 정보를 찾아내고, 사용자의 선택에 따라 해당 영역을 블러(Blur) 처리하여 안전한 이미지를 반환합니다.
+소셜 미디어에 이미지를 업로드하기 전 의도치 않게 포함된 **개인정보 및 기밀 정보를 자동으로 탐지하고 삭제(마스킹)**하여 정보 유출을 방지하는 시스템입니다.
+사용자가 이미지를 업로드하면 AI가 텍스트와 객체를 분석하여 민감 정보를 찾아내고 사용자의 선택에 따라 해당 영역을 블러 처리하여 안전한 이미지를 반환합니다.
+
+## 담당 역할
+**11조(총 3명) 중 [프론트엔드 및 AI 모델 튜닝] 담당 (기여도: 40%)**
+
+### 1. AI 및 데이터 엔지니어링
+* **가상 데이터 생성 및 라벨링:**
+  * 보안 문제로 확보가 어려운 주민등록증 실물 데이터 대신 실제와 유사한 **가상 데이터를 생성**하여 학습 데이터셋을 구축하고 라벨링 수행
+  * 회전, 크기 조절, 밝기 변형 등을 적용한 데이터 증강 작업을 통해 YOLOv5 학습 데이터 부족 문제 해결
+* **OCR 파이프라인 설계:**
+  * 텍스트 탐지를 위한 **PaddleOCR** 모델 구조 설계 및 마진 조정을 통한 인식률 최적화
+* **모델 성능 최적화 (Hyperparameter Tuning):**
+  * XGBoost 텍스트 분류 모델의 성능을 향상하기 위해 **Optuna** 프레임워크 도입
+  * 기존 Grid Search 대비 효율적으로 'max_depth', 'learning_rate' 등 주요 파라미터를 자동 최적화하여 튜닝 시간 단축 및 성능 향상
+
+### 2. 프론트엔드 개발
+* **UI/UX 디자인 및 구현:**
+  * HTML/CSS/JavaScript를 활용하여 직관적인 이미지 업로드 초기 화면 및 결과 확인 페이지 전체 디자인 및 구현
+* **동적 마스킹 기능 (Interactive Features):**
+  * 사용자가 블러 처리된 결과를 확인하고 원하는 위치를 **재선택(수정)하거나 해제할 수 있는 동적 UI 기능** 개발
 
 ## Tech Stack
 | Category | Tech |
 | :--- | :--- |
-| **Frontend** | HTML5, CSS3, JavaScript |
+| **Frontend** | HTML, CSS, JavaScript |
 | **Backend** | Java, Spring Boot |
 | **AI Serving** | Python, Flask |
 | **AI Model** | YOLOv5, PaddleOCR, Tesseract OCR, XGBoost |
 | **Tools** | Postman, Optuna |
 
 ## 시스템 아키텍처
-**User** ↔ **Frontend** ↔ **Spring Boot (Main Server)** ↔ **Flask (AI Server)**
+<img width="2803" height="1110" alt="image" src="https://github.com/user-attachments/assets/f9ac2204-30db-41cc-9bca-7e422a2e11c2" />
 1. 사용자가 이미지를 업로드하면 Spring Boot 서버가 수신
 2. Spring Boot가 Flask 서버로 이미지 분석 요청 (API)
 3. Flask 서버에서 **YOLOv5(객체 탐지)** 및 **OCR(텍스트 추출)** 수행
