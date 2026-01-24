@@ -1,0 +1,154 @@
+.e19_10 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100vw; /* 화면 너비 100% */
+  height: 100vh; /* 화면 높이 100% */
+  position: absolute;
+}
+
+.image_container {
+  width: 44.44vw; /* 640px -> vw 변환 */
+  height: 25vw; /* 360px -> vw 변환 */
+  position: absolute;
+  left: 4.72vw; /* 68px -> vw 변환 */
+  top: 10.42vw; /* 150px -> vw 변환 */
+  display: flex; /* 이미지 중앙 정렬 */
+  justify-content: center;
+  align-items: center;
+}
+
+#processedImage {
+  max-height: 100%; /* 부모 컨테이너의 높이 최대값 */
+  width: auto; /* 가로 크기 비율 유지 */
+  object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
+  transform: rotate(0deg); /* 불필요한 회전 제거 */
+}
+
+.feedback1, .feedback2, .feedback3 {
+  color: rgba(89, 89, 89, 1);
+  width: 40.28vw; /* 비율 유지 */
+  height: 3.47vw; /* 높이 자동 조정 */
+  position: absolute;
+  left: 54.03vw; /* 오른쪽으로 정렬 */
+  font-family: Pretendard;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.81vw; /* 글씨 크기 미세 조정 */
+  letter-spacing: 0;
+}
+
+.feedback1 { top: 11.81vw; }
+.feedback2 { top: 20.14vw; }
+.feedback3 { top: 28.47vw; }
+
+.toggle1_back, .toggle2_back, .toggle3_back {
+  box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25);
+  background-color: #f0f4f6;
+  width: 4.51vw;
+  height: 2.29vw;
+	left: 87.5vw;
+  position: absolute;
+  transition: background-color 0.3s ease;
+	cursor: pointer;
+  border-radius: 13.89vw;
+}
+
+.toggle1_back { top: 11.81vw;}
+.toggle2_back { top: 20.14vw;}
+.toggle3_back { top: 28.47vw;}
+
+.toggle1_circle, .toggle2_circle, .toggle3_circle {
+  box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background-color: rgba(70, 101, 111, 1);
+  width: 1.6vw;
+  height: 1.6vw;
+  position: absolute;
+  left: 0.35vw;
+  top: 0.35vw;
+	transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+/* 활성화 상태 */
+.toggle1_back.on, .toggle2_back.on, .toggle3_back.on {
+  background-color: rgba(143, 171, 183, 1); /* 배경 색상 변경 */
+}
+
+.toggle1_back.on .toggle1_circle,
+.toggle2_back.on .toggle2_circle,
+.toggle3_back.on .toggle3_circle {
+    left: 2.55vw; /* 토글 스위치를 오른쪽으로 이동 */
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.complete_box1 {
+  width: 13.54vw; /* 195px -> vw 변환 */
+  height: 3.05vw; /* 44px -> vw 변환 */
+  position: absolute;
+  left: 80.21vw; /* 1155px -> vw 변환 */
+  top: 36.11vw; /* 520px -> vw 변환 */
+}
+
+.complete_box2 { 
+  box-shadow: 0px 0.28vw 0.28vw rgba(0, 0, 0, 0.25); /* 4px -> vw 변환 */
+  background-color: rgba(143, 171, 183, 1);
+  width: 13.54vw; /* 195px -> vw 변환 */
+  height: 3.06vw; /* 44px -> vw 변환 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.39vw; /* 20px -> vw 변환 */
+}
+
+.complete_txt { 
+  color: rgba(251, 251, 251, 1);
+  width: 2.22vw; /* 32px -> vw 변환 */
+  height: 1.46vw; /* 21px -> vw 변환 */
+  position: absolute;
+  left: 5.69vw; /* 82px -> vw 변환 */
+  top: 0.83vw; /* 12px -> vw 변환 */
+  font-family: Pretendard;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.25vw; /* 18px -> vw 변환 */
+  letter-spacing: 0;
+}
+
+.e71_17679 {
+  width: 13.33vw; /* 192px -> vw 변환 */
+  height: 6.53vw; /* 94px -> vw 변환 */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.up_box {
+  background-color: rgba(251, 251, 251, 0.8);
+  width: 51.32vw; /* 739px -> vw 변환 */
+  height: 6.46vw; /* 93px -> vw 변환 */
+  position: absolute;
+  left: 48.68vw; /* 701px -> vw 변환 */
+  top: 0;
+}
+
+.logo_box {
+  background-color: rgba(251, 251, 251, 0.8);
+  width: 50vw; /* 720px -> vw 변환 */
+  height: 6.46vw; /* 93px -> vw 변환 */
+  position: absolute;
+  left: 0;
+  top: 0.07vw; /* 1px -> vw 변환 */
+}
+
+.logo_txt {
+  color: rgba(70, 101, 111, 1);
+  width: 14.79vw; /* 213px -> vw 변환 */
+  height: 4.3vw; /* 62px -> vw 변환 */
+  position: absolute;
+  left: 4.72vw; /* 68px -> vw 변환 */
+  top: 2.15vw; /* 31px -> vw 변환 */
+  font-family: Calistoga;
+  text-align: left;
+  font-size: 3.33vw; /* 48px -> vw 변환 */
+	font-weight: 550;
+  letter-spacing: 0;
+}
